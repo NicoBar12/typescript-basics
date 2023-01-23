@@ -4,23 +4,13 @@
 
 */
 
-let habilidades: string[] = ['Bash', 'Sting', ' Healing'];
-
-interface Personaje {
+class Heroe {
+  poder: string;
+  edad: number;
   nombre: string;
-  hp: number;
-  habilidades: string[];
-  puebloNatal?: string;
+  nombreReal: string;
 }
 
-//Constructor
-const personaje: Personaje = {
-  nombre: 'Shinra',
-  hp: 100,
-  habilidades: ['Bash', 'Sting', ' Healing'],
-};
+const ironMan = new Heroe();
 
-personaje.puebloNatal = 'Estacion 8';
-
-//Imprime el objeto en forma de tabla
-console.table(personaje);
+console.log(ironMan);
